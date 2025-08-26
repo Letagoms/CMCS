@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduClaim - Claims Management System</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" class="logo">✱ Edu Claim</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/ClaimSubmission">Submit Claim</a></li>
+                    <li><a href="/ViewClaims">View Claims</a></li>
+                    <li><a href="/Approvals">Approvals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+        
+        <p>© 2025 EduClaim. All rights reserved.</p>
+    </footer>
+</body>
+</html>

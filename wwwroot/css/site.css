@@ -1,0 +1,447 @@
+/* EduClaim Styles - Matching PDF Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f6fa;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header/Navigation */
+.header {
+    background: white;
+    border-bottom: 1px solid #e1e8ed;
+    padding: 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+    .nav-menu a {
+        text-decoration: none;
+        color: #536471;
+        font-weight: 500;
+        padding: 8px 0;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+    }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #1da1f2;
+            border-bottom-color: #1da1f2;
+        }
+
+/* Page Headers */
+.page-header {
+    background: white;
+    margin-bottom: 30px;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+    .page-header h1 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+
+    .page-header p {
+        color: #657786;
+        font-size: 16px;
+    }
+
+/* Welcome Page */
+.welcome-section {
+    background: white;
+    border-radius: 12px;
+    padding: 60px 40px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+    .welcome-section h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #2c3e50;
+    }
+
+    .welcome-section .subtitle {
+        color: #657786;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+.quick-actions {
+    margin-top: 40px;
+}
+
+    .quick-actions h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        text-align: left;
+    }
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: #1da1f2;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background: #1991db;
+    }
+
+.btn-secondary {
+    background: white;
+    color: #536471;
+    border: 1px solid #cfd9de;
+}
+
+    .btn-secondary:hover {
+        background: #f7f9fa;
+    }
+
+/* Claims History Table */
+.claims-section {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.section-header {
+    padding: 25px 30px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+    .section-header h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+.claims-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .claims-table th {
+        background: #f7f9fa;
+        padding: 15px 30px;
+        text-align: left;
+        font-weight: 600;
+        color: #536471;
+        font-size: 14px;
+        border-bottom: 1px solid #e1e8ed;
+    }
+
+    .claims-table td {
+        padding: 20px 30px;
+        border-bottom: 1px solid #e1e8ed;
+        color: #2c3e50;
+    }
+
+    .claims-table tr:hover {
+        background: #f7f9fa;
+    }
+
+/* Status Badges */
+.status {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+    .status.approved {
+        background: #e8f5e8;
+        color: #1d7f1d;
+    }
+
+    .status.submitted {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .status.rejected {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+/* Claim Submission Form */
+.form-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form-header {
+    padding: 30px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+    .form-header h3 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+.form-content {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: 500;
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid #cfd9de;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: border-color 0.2s;
+    }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1da1f2;
+            box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.1);
+        }
+
+    .form-group textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+
+/* File Upload */
+.file-upload-area {
+    border: 2px dashed #cfd9de;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    background: #f7f9fa;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+    .file-upload-area:hover {
+        border-color: #1da1f2;
+        background: #f0f8ff;
+    }
+
+    .file-upload-area p {
+        color: #657786;
+        margin: 0;
+    }
+
+.file-types {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 10px;
+}
+
+/* Approvals Dashboard */
+.dashboard-stats {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-item h4 {
+    font-size: 14px;
+    color: #657786;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.stat-item .number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: right;
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.btn-approve {
+    background: #1da1f2;
+    color: white;
+}
+
+    .btn-approve:hover {
+        background: #1991db;
+    }
+
+.btn-reject {
+    background: white;
+    color: #657786;
+    border: 1px solid #cfd9de;
+}
+
+    .btn-reject:hover {
+        background: #f7f9fa;
+    }
+
+/* Footer */
+.footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    text-align: center;
+    color: #657786;
+    border-top: 1px solid #e1e8ed;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+    .footer-links a {
+        color: #657786;
+        text-decoration: none;
+    }
+
+        .footer-links a:hover {
+            color: #1da1f2;
+        }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+    .social-icons a {
+        color: #657786;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+        .social-icons a:hover {
+            color: #1da1f2;
+        }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .claims-table {
+        font-size: 14px;
+    }
+
+        .claims-table th,
+        .claims-table td {
+            padding: 10px 15px;
+        }
+
+    .dashboard-stats {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .stat-item h4,
+    .stat-item .number {
+        text-align: center;
+    }
+}
