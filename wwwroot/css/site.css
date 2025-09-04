@@ -1,4 +1,4 @@
-/* EduClaim Styles - Matching PDF Design */
+
 * {
     margin: 0;
     padding: 0;
@@ -145,9 +145,9 @@ body {
     }
 
 .btn-secondary {
-    background: white;
-    color: #536471;
-    border: 1px solid #cfd9de;
+    color: deepskyblue ;
+        font-size: 15px;
+
 }
 
     .btn-secondary:hover {
