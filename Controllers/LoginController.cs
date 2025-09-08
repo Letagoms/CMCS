@@ -10,10 +10,8 @@ namespace CMCS.Controllers
         }
 
         
-        public IActionResult Login(/* login model parameters if any */)
+        public IActionResult Login()
         {
-            // Validate login credentials here
-
             // Redirect to Home page after successful login
             return RedirectToAction("Index", "Home");
         }
