@@ -1,33 +1,17 @@
-﻿﻿<!-- Views/Shared/_Layout.cshtml -->
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduClaim - Claims Management System</title>
+    <title>Contract Monthly Claim System</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    @{
-        var path = Context.Request.Path.Value?.ToLower();
-        bool isAuthPage = path == "/login/index" || path == "/registration/index";
-        bool isHomePage = path == "/home/index" || path == "/";
-    }
 
     <header class="header">
         <div class="nav-container">
-            <a href="/Home" class="logo">✱ Edu Claim</a>
-            <nav>
-                <ul class="nav-menu" id="roleNav">
-                    <li data-role="all"><a href="/Home">Home</a></li>
-                    @if (!isAuthPage && !isHomePage)
-                    {
-                        <li data-role="lecturer"><a href="/ClaimSubmission">Submit Claim</a></li>
-                        <li data-role="coordinator"><a href="/ViewClaims">View Claims</a></li>
-                        <li data-role="manager"><a href="/Approvals">Approvals</a></li>
-                    }
-                </ul>
-            </nav>
+            <a href="/Home" class="logo">✱ Contract Monthly Claim System</a>
         </div>
     </header>
 
@@ -39,22 +23,8 @@
     </main>
 
     <footer class="footer">
-        <p>© 2025 EduClaim. All rights reserved.</p>
+        <p>© 2025 Contract Monthly Claim System. All rights reserved.</p>
     </footer>
-    <script src="~/js/site.js"></script>
-    <script>
-        // Role-based navigation visibility
-        document.addEventListener('DOMContentLoaded', function () {
-            const userRole = localStorage.getItem('userRole');
-            document.querySelectorAll('#roleNav li').forEach(function (li) {
-                const role = li.getAttribute('data-role');
-                if (role === 'all' || role === userRole) {
-                    li.style.display = '';
-                } else {
-                    li.style.display = 'none';
-                }
-            });
-        });
-    </script>
+   
 </body>
 </html>

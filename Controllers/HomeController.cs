@@ -7,18 +7,5 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult ViewClaims()
-    {
-        return View();
-    }
-
-    public IActionResult ClaimSubmission()
-    {
-        return View();
-    }
-
-    public IActionResult Approvals()
-    {
-        return View();
-    }
+   
 }

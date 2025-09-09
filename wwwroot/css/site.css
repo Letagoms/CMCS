@@ -145,14 +145,15 @@ body {
     }
 
 .btn-secondary {
-    color: deepskyblue ;
+    color:white ;
+    background:#2c3e50;
         font-size: 15px;
 
 }
 
-    .btn-secondary:hover {
-        background: #f7f9fa;
-    }
+.btn btn-third {
+    color:aqua
+}
 
 /* Claims History Table */
 .claims-section {
@@ -197,6 +198,8 @@ body {
     .claims-table tr:hover {
         background: #f7f9fa;
     }
+
+
 
 /* Status Badges */
 .status {
@@ -361,7 +364,32 @@ body {
     .btn-reject:hover {
         background: #f7f9fa;
     }
+/* more */
+        .btn-approved {
+    background: #28a745;
+    color: #fff;
+}
+.btn-approved:hover {
+    background: #218838;
+}
 
+.btn-rejected {
+    background: #dc3545;
+    color: #fff ;
+}
+.btn-rejected:hover {
+    background: #c82333;
+}
+
+.btn-pending {
+    background: #808080;
+    color:white;
+    border: 1px solid #cfd9de;
+}
+.btn-pending:hover {
+    background: #f7f9fa;
+}
+   
 /* Footer */
 .footer {
     margin-top: 60px;

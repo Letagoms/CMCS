@@ -11,36 +11,32 @@
             <form method="post" action="/Login/Index">
                 <div class="form-group">
                     <label for="loginEmail">Email Address</label>
-                    <input type="email" id="loginEmail" placeholder="Enter your email">
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email">
                 </div>
-
                 <div class="form-group">
                     <label for="loginPassword">Password</label>
-                    <input type="password" id="loginPassword" placeholder="Enter your password">
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password">
                 </div>
-               
                 <div class="form-group">
                     <label for="role">Role</label>
-                    <select id="role">
+                    <select id="role" name="role">
                         <option value="">Select your role</option>
                         <option value="lecturer">Lecturer</option>
                         <option value="coordinator">Coordinator</option>
                         <option value="Manager">Manager</option>
                     </select>
                 </div>
-
-				<div>
-					<a href="/Home/Index" class="btn btn-third">Sign In</a>
-				</div>
-
+                <div>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </div>
             </form>
 
-                    <div class="auth-toggle">
-                        <p>Don't have an account?</p>
-                <a href="/Registration/Index" class="btn btn-third">create account</a>
-			</div>
+            <div class="auth-toggle" style="display: flex; align-items: center; gap: 8px;">
+                <p style="margin: 0;">Don't have an account?</p>
+                <a href="/Registration/Index">create account</a>
+            </div>
 
                 </div>
             </div>
         </div>
-<!-- <button type="button" href="/Home/Index">Create Account</button>-->
+
